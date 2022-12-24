@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="639.0" prefWidth="1016.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResourceViewController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0">
+         <children>
+            <ImageView fitHeight="756.0" fitWidth="1110.0" layoutX="-63.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/f23b31bc3682b708a8110dd467f8bcd6.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="resourceName" alignment="CENTER" layoutX="224.0" layoutY="95.0" prefHeight="36.0" prefWidth="540.0" text="resourceName" textAlignment="CENTER">
+               <font>
+                  <Font name="Avenir Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="148.0" prefHeight="36.0" prefWidth="105.0" text="Finality:">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="183.0" prefHeight="36.0" prefWidth="157.0" text="Access:">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="223.0" prefHeight="36.0" prefWidth="93.0" text="Price:">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="265.0" prefHeight="36.0" prefWidth="99.0" text="Type:">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="800.0" layoutY="94.0" prefHeight="36.0" prefWidth="28.0" text="ID">
+               <font>
+                  <Font name="Avenir Roman" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="463.0" layoutY="612.0" mnemonicParsing="false" onAction="#returntoFirstScreen" text="Return" />
+            <Label fx:id="idNumber" layoutX="842.0" layoutY="93.0" prefHeight="36.0" prefWidth="93.0" text="idNumber">
+               <font>
+                  <Font name="Avenir Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="finalityText" layoutX="404.0" layoutY="148.0" prefHeight="36.0" prefWidth="493.0" text="finalityText">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="accessText" layoutX="404.0" layoutY="184.0" prefHeight="36.0" prefWidth="501.0" text="accessText">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceText" layoutX="404.0" layoutY="221.0" prefHeight="36.0" prefWidth="501.0" text="priceText">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeText" layoutX="404.0" layoutY="263.0" prefHeight="36.0" prefWidth="501.0" text="typeText">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="DiseasesRelatedTable" layoutX="209.0" layoutY="404.0" onMouseClicked="#selectedDisease" prefHeight="192.0" prefWidth="577.0">
+              <columns>
+                <TableColumn fx:id="tableName" prefWidth="575.9999847412109" text="Diseases related" />
+              </columns>
+            </TableView>
+            <Label layoutX="233.0" layoutY="307.0" prefHeight="36.0" prefWidth="99.0" text="URL:">
+               <font>
+                  <Font name="Avenir Roman" size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="urlText" layoutX="404.0" layoutY="313.0" onMouseClicked="#linkPressed" prefHeight="25.0" prefWidth="287.0" />
+            <Hyperlink fx:id="urlText2" layoutX="404.0" layoutY="338.0" onMouseClicked="#linkPressed" prefHeight="25.0" prefWidth="287.0" />
+            <Hyperlink fx:id="urlText3" layoutX="404.0" layoutY="363.0" onMouseClicked="#linkPressed" prefHeight="25.0" prefWidth="287.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
