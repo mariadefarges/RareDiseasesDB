@@ -17,7 +17,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import pojos.Disease;
 import pojos.Resource;
 
 public class ResourcesResultsController {

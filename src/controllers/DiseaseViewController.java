@@ -3,8 +3,6 @@ package controllers;
 import java.io.IOException;
 import java.rmi.NotBoundException;
 import java.sql.SQLException;
-import java.util.List;
-
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

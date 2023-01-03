@@ -33,7 +33,7 @@ public class Disease implements Serializable {
 		this.treatment = treatment;
 		this.diagnosis = diagnosis;
 		this.description = description;
-		this.prevalenceF = prevalenceF;
+		this.setPrevalenceF(prevalenceF);
 	}
 	
 	public Disease(Integer idDisease, String name) {
@@ -119,11 +119,18 @@ public class Disease implements Serializable {
 		this.resources = resources;
 	}
 
-	
+	public Float getPrevalenceF() {
+		return prevalenceF;
+	}
+
+	public void setPrevalenceF(Float prevalenceF) {
+		this.prevalenceF = prevalenceF;
+	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(affectedSystem, description, diagnosis, idDisease, name, prevalence, resources, treatment);
+		return Objects.hash(affectedSystem, description, diagnosis, idDisease, name, prevalence, prevalenceF, resources,
+				treatment);
 	}
 
 	@Override
@@ -138,24 +145,15 @@ public class Disease implements Serializable {
 		return Objects.equals(affectedSystem, other.affectedSystem) && Objects.equals(description, other.description)
 				&& Objects.equals(diagnosis, other.diagnosis) && Objects.equals(idDisease, other.idDisease)
 				&& Objects.equals(name, other.name) && Objects.equals(prevalence, other.prevalence)
-				&& Objects.equals(resources, other.resources) && Objects.equals(treatment, other.treatment);
+				&& Objects.equals(prevalenceF, other.prevalenceF) && Objects.equals(resources, other.resources)
+				&& Objects.equals(treatment, other.treatment);
 	}
 
 	@Override
 	public String toString() {
 		return "Disease [idDisease=" + idDisease + ", name=" + name + ", prevalence=" + prevalence + ", affectedSystem="
 				+ affectedSystem + ", treatment=" + treatment + ", diagnosis=" + diagnosis + ", description="
-				+ description + ", resources=" + resources + "]";
+				+ description + ", prevalenceF=" + prevalenceF + ", resources=" + resources + "]";
 	}
-	
-	
-
-	/*@Override
-	public String toString() {
-		return "\nidDisease: " + idDisease + "\nName: " + name + "\nPrevalence: " + prevalence
-				+ "\nAffectedSystem: " + affectedSystem + "\nTreatment: " + treatment + "\nDiagnosis: " + diagnosis
-				+ "\nDescription: " + description;
-	}*/
-	
-	
+		
 }
