@@ -19,8 +19,8 @@
 				<Image url="@../images/f23b31bc3682b708a8110dd467f8bcd6.png" />
 			</image>
 		</ImageView>
-		<TextField fx:id="searchDiseasefield" layoutX="77.0" layoutY="264.0" onKeyPressed="#switchToResultsofDisease" prefHeight="28.0" prefWidth="848.0" promptText="Disease" />
-		<TextField fx:id="searchResourcefield" layoutX="124.0" layoutY="447.0" onKeyPressed="#switchToResultsofResource" prefHeight="28.0" prefWidth="804.0" promptText="Resource" />
+		<TextField fx:id="searchDiseasefield" layoutX="80.0" layoutY="261.0" onKeyPressed="#switchToResultsofDisease" prefHeight="28.0" prefWidth="723.0" promptText="Disease" />
+		<TextField fx:id="searchResourcefield" layoutX="82.0" layoutY="450.0" onKeyPressed="#switchToResultsofResource" prefHeight="28.0" prefWidth="721.0" promptText="Resource" />
 
 		<Label layoutX="222.0" layoutY="59.0" prefHeight="100.0" prefWidth="583.0" text="Rare Diseases Database" textAlignment="CENTER" textFill="#4785b9">
 			<font>
@@ -43,12 +43,12 @@
 				<Font name="Avenir Roman" size="25.0" />
 			</font>
 		</Label>
-		<Label layoutX="87.0" layoutY="393.0" prefHeight="54.0" prefWidth="184.0" text="(Name or affected system)" textAlignment="CENTER" textFill="#4785b9">
+		<Label layoutX="87.0" layoutY="393.0" prefHeight="54.0" prefWidth="184.0" text="(Name)" textAlignment="CENTER" textFill="#4785b9">
 			<font>
 				<Font name="Avenir Roman" size="15.0" />
 			</font>
 		</Label>
-		<MenuButton layoutX="798.0" layoutY="219.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="127.0" text="Prevalence" textAlignment="CENTER">
+		<MenuButton layoutX="801.0" layoutY="219.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="127.0" text="Prevalence" textAlignment="CENTER">
 			<items>
             <CheckMenuItem mnemonicParsing="false" onAction="#hightolow" text="From higher to lower" />
 			<CheckMenuItem mnemonicParsing="false" onAction="#lowtohigh" text="From lower to higher" />
@@ -109,6 +109,6 @@
 			</items>
 		</MenuButton>
 		<Button layoutX="811.0" layoutY="259.0" mnemonicParsing="false" onAction="#switchToResultsofDiseases" prefHeight="32.0" prefWidth="117.0" text="Search Disease" />
-		<Button layoutX="811.0" layoutY="445.0" mnemonicParsing="false" onAction="#switchToResultsofResources" prefHeight="32.0" prefWidth="117.0" text="Search Resource" />
+		<Button layoutX="811.0" layoutY="448.0" mnemonicParsing="false" onAction="#switchToResultsofResources" prefHeight="32.0" prefWidth="117.0" text="Search Resource" />
 	</children>
 </AnchorPane>

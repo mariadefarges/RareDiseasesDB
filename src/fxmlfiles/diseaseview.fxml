@@ -50,7 +50,7 @@
                </font>
             </Label>
             <Button layoutX="463.0" layoutY="612.0" mnemonicParsing="false" onAction="#returntoFirstScreen" text="Return" />
-            <Label fx:id="idNumber" layoutX="842.0" layoutY="93.0" prefHeight="36.0" prefWidth="53.0" text="idNumber">
+            <Label fx:id="idNumber" layoutX="842.0" layoutY="93.0" prefHeight="36.0" prefWidth="98.0" text="idNumber">
                <font>
                   <Font name="Avenir Roman" size="20.0" />
                </font>
